@@ -6,8 +6,13 @@
 # de desconto que ele dará para os seus clientes no valor total da compra, faça um software 
 # que solicite o valor da porcentagem e logo após mostre o valor com desconto e o valor descontado
 # mudar o sistema para que ele pergunte qual o produto que o ciente comprou e o valor total deste produto.
-# se o valor total descontado for inferior a R$ 10,00, oferecer um produto a mais n pedido  
+# se o valor total descontado for inferior a R$ 10,00, oferecer um produto a mais no pedido  
 # perguntar o nome deste item e o valor do mesmo.
+
+# A fazer
+# digitar o nome do produto e o valor do produto
+# verificar se o valor é inferior a R$ 10,00, se sim rodar a regra de acrescentar um produto
+
 
 system 'clear'
 
