@@ -2,4 +2,4 @@
 
 #### Anotações
 
-Assisti 45 minutos da vídeo aula
+Próximo vídeo é o do dia 5
