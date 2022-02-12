@@ -9,7 +9,11 @@
 # se o valor total descontado for inferior a R$ 10,00, oferecer um produto a mais n pedido  
 # perguntar o nome deste item e o valor do mesmo.
 
+require 'byebug'
+
 system 'clear'
+
+debugger
 
 puts "******************************************************************************"
 puts "Olá seu João!!! Bem vindo(a) ao sistema\n/Vamos fazer o pedido do seu cliente?"
@@ -25,7 +29,7 @@ system 'clear'
  nome_produto_1 = gets
 
  puts "#{nome_cliente} informe o valor do produto #{nome_produto_1}"
- valor_produto_1 = gets
+ valor_produto_1 = gets.to_f
 
  # verificar se o valor é inferior a R$ 10,00, se sim rodar a regra de acrescentar um produto
 
@@ -60,6 +64,7 @@ puts "Olá #{nome_cliente}, você gostaria de incluir mais um item em seu pedido
 vai_adicionar_um_produto_a_mais = gets.to_s.upcase.strip == "S"
 
 porcentagem_desconto = 0
+valor_produto_2 = 0.0
 
 if vai_adicionar_um_produto_a_mais
 
@@ -67,7 +72,7 @@ if vai_adicionar_um_produto_a_mais
     nome_produto_2 = gets.to_s.strip
 
     puts "Digite o valor do produto (#{nome_produto_2}): "
-    valor_produto_2 = gets
+    valor_produto_2 = gets.to_f
 
     puts "Perfeito (#{nome_cliente}), por você ter adicionado um produto a mais ganhará mais 1% de desconto"
     porcentagem_desconto += 1
@@ -76,10 +81,11 @@ end
 
 puts "Olá João, já temos #{porcentagem_desconto}% de desconto? Coloque o valor do desconto a mais ou digite Zero para sem desconto a mais"
 porcentagem_desconto += gets.to_f
- 
+
+
  valor_total = (valor_produto_1 + valor_produto_2)
- valor_do_desconto = valor_total * porcentagem_desconto / 100
- valor_total_com_desconto = valor_atual_compra - ((porcentagem_desconto * valor_atual_compra) / 100)
+ valor_do_desconto = (valor_total * porcentagem_desconto ) / 100
+ valor_total_com_desconto = valor_total - ((porcentagem_desconto * valor_total) / 100)
  valor_total_descontado =  valor_total - valor_do_desconto
 
 system 'clear'
@@ -91,9 +97,9 @@ puts "==========================================================="
 puts "========================Itens=============================="
 puts "==========================================================="
 
-puts " - #{nome_produto_1}: R$ #{valor_produto_1}"
+puts " Produto 1 - #{nome_produto_1}: R$ #{valor_produto_1}"
 if vai_adicionar_um_produto_a_mais
-    puts " - #{nome_produto_2}: R$ #{valor_produto_2}"
+puts " Produto 2-  #{nome_produto_2}: R$ #{valor_produto_2}"
 end
 
 puts "============================================================"
@@ -105,11 +111,11 @@ puts "A porcentagem de desconto total foi de #{porcentagem_desconto}%"
 puts "============================================================"
 
 puts "============================================================"
-puts "O valor total do desconto foi  #{valor_do_desconto}%"
+puts "O valor total do desconto foi R$ #{valor_do_desconto}"
 puts "============================================================"
 
 puts "============================================================"
-puts "O valor total a ser cobrado é de  #{valor_total_descontado}%"
+puts "O valor total a ser cobrado é de R$ #{valor_total_descontado}"
 puts "============================================================"
 
 
