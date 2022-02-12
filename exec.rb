@@ -28,42 +28,17 @@ nome_cliente = gets.to_s.strip
 
 system 'clear'
 
- # digitar o nome do produto e seu valor
  puts "#{nome_cliente} Digite o nome do produto"
  nome_produto_1 = gets
 
  puts "#{nome_cliente} informe o valor do produto #{nome_produto_1}"
  valor_produto_1 = gets.to_f
 
- # verificar se o valor é inferior a R$ 10,00, se sim rodar a regra de acrescentar um produto
-
-#  acrescimo_no_valor = 0
-#  valor_atual_compra = 0
-
-#  if valor_compra < 10
-#      puts "#{nome}, você gostaria de incluir um novo item ao pedido? (S/N)"
-#      decisao_do_cliente = gets
-#      #Convertendo para string (to_s), deixando maiúscula (upcase) e retirando espaços (strip)
-#      if decisao_do_cliente.to_s.upcase.strip == "S"
-#         puts "#{nome} por gentileza digitar o nome do produto"
-#         nome_produto_acres = gets
-
-#         puts "#{nome} por gentileza digitar o valor do produto #{nome_produto_acres}"
-#         valor_produto_acres = gets.to_f
-
-#         acrescimo_no_valor += valor_produto_acres
-
-#         valor_atual_compra = acrescimo_no_valor + valor_compra
-#      end
-# end   
-
-
+ 
 system 'clear'
 
-# Pedir a porcentagem do desconto
 puts "Olá #{nome_cliente}, você gostaria de incluir mais um item em seu pedido? Se fizer isso, você poderá receber um desconto maior no valor total. (S/N)"
 
-# decisao_do_cliente = gets
 
 vai_adicionar_um_produto_a_mais = gets.to_s.upcase.strip == "S"
 
@@ -94,7 +69,6 @@ porcentagem_desconto += gets.to_f
 
 system 'clear'
 
-# Mostrar um resumo detalhado de tudo o que aconteceu aqui, com nomes e valores de produtos
 puts "Opa seu João, abaixo os detalhes referentes ao pedido do cliente #{nome_cliente}\n"
 
 puts "==========================================================="
