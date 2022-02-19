@@ -2,5 +2,5 @@
 
 #### Anotações
 
-18/02/2022 
-Assisti 13 minutos da vídeo aula 5 
+19/02/2022 
+Assisti 20 minutos da vídeo aula 5 
