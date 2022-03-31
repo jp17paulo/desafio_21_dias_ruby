@@ -26,4 +26,4 @@ while em_aula do
 end
 
 
-puts "O seu NPS é de : #{(notas.sum / notas.length)}"
+puts "O NPS da plataforma é de : #{(notas.sum / notas.length)}"
