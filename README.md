@@ -2,5 +2,13 @@
 
 #### Anotações
 
-26/03/2022 
-Assisti 50 mints  da vídeo aula 6
+### Executando código ruby
+
+``` bash 
+  ruby ruby.rb
+
+```
+
+
+10/05/2022 
+Assisti 10 mints  da vídeo aula 7
