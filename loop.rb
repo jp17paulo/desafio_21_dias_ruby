@@ -25,5 +25,9 @@ while em_aula do
     notas << nota
 end
 
+puts "As notas foram armazenadas com sucesso !"
+sleep (2)
+system 'clear'
 
-puts "O NPS da plataforma é de : #{(notas.sum / notas.length)}"
+puts "Notas obtidas :" notas
+puts "O seu NPS é de : #{(notas.sum / notas.length)}"
