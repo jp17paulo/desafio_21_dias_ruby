@@ -10,8 +10,8 @@ notas = []
 em_aula = true
 data_encerramento = Time.now + 20.seconds
 
-puts data_encerramento
-puts Time.now 
+# puts data_encerramento
+# puts Time.now 
 
 # while em_aula do
 while Time.now < data_encerramento do

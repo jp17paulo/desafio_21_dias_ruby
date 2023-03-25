@@ -1,3 +1,8 @@
+
+ystem 'clear'
+require 'byebug'
+require 'active_support/time'
+
 # Enquanto estamos na aula, o Danilo estará explicando
 # lógica de programação e desenvolvimento pessoal, aluno você concordo com isso?
 
@@ -27,7 +32,6 @@ end
 
 puts "As notas foram armazenadas com sucesso !"
 sleep (2)
-system 'clear'
 
-puts "Notas obtidas :" notas
+
 puts "O seu NPS é de : #{(notas.sum / notas.length)}"
