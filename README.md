@@ -10,5 +10,5 @@
 ```
 
 
-18/06/2022 
-Assisti 33 mints da vídeo aula 7 (Refazendo)
+25/03/2023 
+Assisti 5 minutos da vídeo aula 8
