@@ -11,4 +11,4 @@
 
 
 25/03/2023 
-Assisti 5 minutos da vídeo aula 8
+Assisti 45 minutos da vídeo aula 8
